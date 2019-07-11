@@ -9,24 +9,10 @@
 <body>
     <h1>Programa de Colas</h1>
 
+    <p id="msg"></p>
+
     <script src="socket.io/socket.io.js"></script>
 
-    <script>
-    
-        var socket = io();
-
-        socket.on('connect', function() {
-
-            console.log('Conectado al servidor');
-
-        });
-
-        socket.on('disconnect', function() {
-            
-            console.log('La conexion con el servidor se perdió');
-
-        });
-    
-    </script>
+    <script src="js/socket-custom.js"></script>
 </body>
 </html>
